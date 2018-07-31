@@ -21,7 +21,20 @@ public class LoginBean {
 	private String email;
 	private String password;
 	private RoleUser role;
+	private String token;
 	
+	public String getToken() {
+		return token;
+	}
+	public void setToken(String token) {
+		this.token = token;
+	}
+	public List<CertificateBean> getCertificate() {
+		return certificate;
+	}
+	public void setCertificate(List<CertificateBean> certificate) {
+		this.certificate = certificate;
+	}
 	@OneToMany(mappedBy = "login")
 	private List<CertificateBean> certificate;
 	

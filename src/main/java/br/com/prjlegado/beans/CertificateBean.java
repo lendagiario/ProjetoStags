@@ -7,6 +7,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
+import org.hibernate.annotations.Type;
+
 @Entity
 public class CertificateBean {
 	@Id
@@ -15,7 +17,7 @@ public class CertificateBean {
 	@ManyToOne
 	@JoinColumn(name="login",nullable=false)
 	private LoginBean login;
-	
+	@Type(type="org.hibernate.type.BinaryType") 
 	private ImageBean image;
  
 	public Long getId() {
