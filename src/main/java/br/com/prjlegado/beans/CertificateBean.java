@@ -24,7 +24,7 @@ public class CertificateBean {
 
 	public void setId(Long id) {
 		this.id = id;
-	}
+	}                
 
 	public LoginBean getLogin() {
 		return login;
