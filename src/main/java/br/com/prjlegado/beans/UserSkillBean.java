@@ -19,8 +19,7 @@ public class UserSkillBean {
 	
 	private Integer level;
 	
-	@ManyToOne
-	private CertificateBean certificate;
+//	private CertificateBean certificate;
 	
 	public Long getId() {
 		return id;
@@ -45,12 +44,6 @@ public class UserSkillBean {
 	}
 	public void setLevel(Integer level) {
 		this.level = level;
-	}
-	public CertificateBean getCertificate() {
-		return certificate;
-	}
-	public void setCertificate(CertificateBean certificate) {
-		this.certificate = certificate;
 	}
 	
 	
